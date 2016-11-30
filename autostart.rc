@@ -1,4 +1,0 @@
-#map super to ctrl keys
-setxkbmap -option altwin:ctrl_win; 
-
-
