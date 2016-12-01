@@ -2,8 +2,9 @@ install:
 	cp .conkyrc ~/.config/;
 	cp autostart ~/.config/openbox/;
 	sudo cp lightdm.conf /etc/lightdm/;
-	wget https://wepress.ca/vim-config.zip;
-	unzip -e vim-config.zip;
+	sudo apt install vim-nox fonts-powerline;
+	wget https://wepress.ca/vim-config.tar.gz;
+	tar -xvf vim-config.tar.gz;
 	cp -r vim-config/.vim ~/;
 	cp vim-config/.vimrc ~/;
 	sudo apt install git vim gcc g++ cmake;
